@@ -1,0 +1,225 @@
+
+<DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portofolio Pribadi - Beranda</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .hero-banner {
+            background-color: #2e7d32;
+            color: white;
+            padding: 40px 30px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+
+        .hero-banner h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .hero-banner p {
+            font-size: 17px;
+            line-height: 1.6;
+        }
+
+        .quick-stats {
+            display: flex;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .stat-box {
+            background-color: #388e3c;
+            padding: 15px 20px;
+            border-radius: 6px;
+            flex: 1;
+        }
+
+        .stat-box h3 {
+            font-size: 24px;
+            color: white;
+            margin-bottom: 5px;
+        }
+
+        .stat-box p {
+            font-size: 14px;
+        }
+
+        .focus-title {
+            margin-bottom: 10px;
+            color: #2e7d32;
+        }
+
+        .focus-list {
+            margin-left: 20px;
+            line-height: 1.8;
+        }
+
+        .about-button {
+            display: inline-block;
+            background-color: #2e7d32;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .about-button:hover {
+            background-color: #1b5e20;
+        }
+
+        @media (max-width: 768px) {
+            .quick-stats {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <header class="sidebar">
+
+        <h1>
+            <a href="index.html">FAISAL</a>
+        </h1>
+
+        <nav class="nav-menu">
+            <ul>
+
+                <li>
+                    <a href="index.html" class="active">
+                        Beranda
+                    </a>
+                </li>
+
+                <li>
+                    <a href="about.html">
+                        Tentang Saya
+                    </a>
+                </li>
+
+                <li>
+                    <a href="kontak.html">
+                        Kontak
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+
+       
+
+    </header>
+
+
+    <!-- Konten Utama -->
+    <main class="main-content">
+
+        <!-- Bagian Selamat Datang -->
+        <section class="hero-banner">
+
+            <h1>
+                Selamat Datang di Portofolio Saya!
+            </h1>
+
+            <p>
+                Saya seorang pengembang IoT pemula yang berfokus
+                pada teknologi Internet of Things (IoT), Pemrograman,
+                dan Pengembangan Sistem Berbasis Perangkat Terhubung.
+
+            </p>
+
+            <div class="quick-stats">
+
+                <div class="stat-box">
+                    <h3>3+</h3>
+                    <p>Proyek Selesai</p>
+                </div>
+
+                <div class="stat-box">
+                    <h3>Informatics</h3>
+                    <p>Program Studi</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Ringkasan -->
+        <section class="card">
+
+            <div class="page-header">
+                <h2>Ringkasan Singkat</h2>
+            </div>
+
+            <p style="
+                margin-bottom: 15px;
+                color: #555555;
+                line-height: 1.6;
+            ">
+                Website ini dibuat menggunakan murni
+                <strong>HTML5</strong> dan <strong>CSS3</strong>
+                tanpa menggunakan framework external apapun
+                seperti Bootstrap atau Tailwind CSS.
+            </p>
+
+
+            <h4 class="focus-title">
+                Fokus Keahlian Utama:
+            </h4>
+
+            <ul class="focus-list">
+
+                <li>
+                    Pemrograman Terstruktur (C++)
+                    & Pemrograman Web (HTML/CSS/JS)
+                </li>
+
+                <li>
+                    Perancangan Basis Data
+                    (MySQL, ERD, Normalisasi)
+                </li>
+
+                <li>
+                    Arsitektur & Jaringan Komputer.
+                </li>
+                <li>
+                    Pengembang IoT
+                </li>
+
+            </ul>
+
+
+            <div style="margin-top: 25px;">
+
+                <a
+                    href="about.html"
+                    class="about-button"
+                >
+                    Baca Lebih Lanjut Tentang Saya →
+                </a>
+
+                 <div class="sidebar-footer">
+            <p>&copy; 2026 Portofolio HTML/CSS</p>
+        </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+</html>
+```

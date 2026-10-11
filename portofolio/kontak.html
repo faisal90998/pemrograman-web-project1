@@ -1,0 +1,252 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portofolio Pribadi - Kontak</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #cccccc;
+            border-radius: 5px;
+            font-size: 14px;
+            outline: none;
+            box-sizing: border-box;
+        }
+
+        .form-control:focus {
+            border-color: #2e7d32;
+        }
+
+        .btn-submit {
+            background-color: #2e7d32;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .btn-submit:hover {
+            background-color: #1b5e20;
+        }
+
+        .contact-title {
+            color: #2e7d32;
+            margin-bottom: 15px;
+        }
+
+        .contact-info {
+            list-style: none;
+            line-height: 2;
+            padding: 0;
+        }
+
+        .contact-info a {
+            color: #2e7d32;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <header class="sidebar">
+
+        <h1>
+            <a href="index.html">FAISAL</a>
+        </h1>
+
+        <nav class="nav-menu">
+            <ul>
+
+                <li>
+                    <a href="index.html">
+                        Beranda
+                    </a>
+                </li>
+
+                <li>
+                    <a href="about.html">
+                        Tentang Saya
+                    </a>
+                </li>
+
+                <li>
+                    <a href="kontak.html" class="active">
+                        Kontak
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+
+        <div class="sidebar-footer">
+            <p>&copy; 2026 Portofolio HTML/CSS</p>
+        </div>
+
+    </header>
+
+
+    <!-- Konten Utama -->
+    <main class="main-content">
+
+        <!-- Form Kontak -->
+        <section class="card">
+
+            <div class="page-header">
+                <h2>Hubungi Saya</h2>
+            </div>
+
+            <p style="
+                margin-bottom: 25px;
+                color: #666666;
+                line-height: 1.6;
+            ">
+                Jika Anda memiliki pertanyaan, penawaran proyek,
+                atau ingin berdiskusi, silakan isi formulir
+                kontak di bawah ini.
+            </p>
+
+
+            <form action="#" method="POST">
+
+                <div class="form-group">
+                    <label for="nama">
+                        Nama Lengkap:
+                    </label>
+
+                    <input
+                        type="text"
+                        id="nama"
+                        name="nama"
+                        class="form-control"
+                        placeholder="Masukkan nama Anda..."
+                        required
+                    >
+                </div>
+
+
+                <div class="form-group">
+                    <label for="email">
+                        Alamat Email:
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        class="form-control"
+                        placeholder="nama@email.com"
+                        required
+                    >
+                </div>
+
+
+                <div class="form-group">
+                    <label for="kategori">
+                        Kategori Pesan:
+                    </label>
+
+                    <select
+                        id="kategori"
+                        name="kategori"
+                        class="form-control"
+                    >
+                        <option value="pertanyaan">
+                            Pertanyaan Umum
+                        </option>
+
+                        <option value="proyek">
+                            Penawaran Proyek
+                        </option>
+
+                        <option value="diskusi">
+                            Diskusi Academic / Tech
+                        </option>
+                    </select>
+                </div>
+
+
+                <div class="form-group">
+                    <label for="pesan">
+                        Pesan Anda:
+                    </label>
+
+                    <textarea
+                        id="pesan"
+                        name="pesan"
+                        rows="5"
+                        class="form-control"
+                        placeholder="Tuliskan pesan Anda di sini..."
+                        required
+                    ></textarea>
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="btn-submit"
+                >
+                    Kirim Pesan
+                </button>
+
+            </form>
+
+        </section>
+
+
+        <!-- Informasi Tambahan -->
+        <section class="card">
+
+            <h3 class="contact-title">
+                Informasi Tambahan
+            </h3>
+
+            <ul class="contact-info">
+
+                <li>
+                    <strong>Email Direct:</strong>
+                    <a href="mailto:FAISAL@example.com">
+                        FAISAL@example.com
+                    </a>
+                </li>
+
+                <li>
+                    <strong>Lokasi:</strong>
+                    Jakarta, Indonesia
+                </li>
+
+            </ul>
+
+        </section>
+
+    </main>
+
+</body>
+</html>
+```

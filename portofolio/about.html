@@ -1,0 +1,223 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portofolio Pribadi - Tentang Saya</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .profile-grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 20px;
+        }
+
+        .custom-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        .custom-table th,
+        .custom-table td {
+            border: 1px solid #ccc;
+            padding: 12px;
+            text-align: left;
+        }
+
+        .custom-table th {
+            background-color: #2e7d32;
+            color: white;
+        }
+
+        .custom-table tr:nth-child(even) {
+            background-color: #f1f8f1;
+        }
+
+        .custom-table tr:hover {
+            background-color: #e8f5e9;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <header class="sidebar">
+
+        <h1>
+            <a href="index.html">Faisal</a>
+        </h1>
+
+        <nav class="nav-menu">
+            <ul>
+                <li>
+                    <a href="index.html">Beranda</a>
+                </li>
+
+                <li>
+                    <a href="about.html" class="active">
+                        Tentang Saya
+                    </a>
+                </li>
+
+                <li>
+                    <a href="kontak.html">Kontak</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="sidebar-footer">
+            <p>&copy; 2026 Portofolio HTML/CSS</p>
+        </div>
+
+    </header>
+
+
+    <!-- Konten Utama -->
+    <main class="main-content">
+
+        <section class="card">
+
+            <div class="page-header">
+                <h2>Tentang Saya</h2>
+            </div>
+
+            <div class="profile-grid">
+
+                <div>
+                    <img
+                        src="faisal1.jpg"
+                        alt="Foto Formal"
+                        style="
+                            width: 50%;
+                            border-radius: 8px;
+                            border: 2px solid #ccc;
+                        "
+                    >
+                </div>
+
+                <div>
+
+                    <h3 style="
+                        color: #2e7d32;
+                        margin-bottom: 10px;
+                    ">
+                        Pengembang Web & Mahasiswa Informatika
+                    </h3>
+
+                    <p style="
+                        color: #666;
+                        margin-bottom: 15px;
+                        line-height: 1.6;
+                    ">
+                        Saya adalah mahasiswa Teknik Informatika
+                        yang memiliki ketertarikan pada Internet of Things (IoT),
+                        pemrograman, dan pengembangan teknologi
+                        yang menghubungkan perangkat dengan sistem digital.
+
+                    </p>
+
+                    <ul style="
+                        list-style: none;
+                        line-height: 2;
+                    ">
+
+                        <li>
+                            <strong>Nama Lengkap:</strong>
+                            Faisal
+                        </li>
+
+                        <li>
+                            <strong>Status:</strong>
+                            Mahasiswa Aktif
+                        </li>
+
+                        <li>
+                            <strong>Pendidikan:</strong>
+                            Teknik Informatika / Komputer
+                        </li>
+
+                        <li>
+                            <strong>Website Personal:</strong>
+
+                            <a
+                                href="https://github.com"
+                                target="_blank"
+                                style="color: #2e7d32;"
+                            >
+                                github.com/faisal
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="card">
+
+            <div class="page-header">
+                <h2>Riwayat Pendidikan</h2>
+            </div>
+
+            <table class="custom-table">
+
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Jenjang</th>
+                        <th>Institusi</th>
+                        <th>Tahun</th>
+                        <th>Keterangan</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>1</td>
+                        <td>Perguruan Tinggi</td>
+                        <td>Universitas Paramadina</td>
+                        <td>2025 - Sekarang</td>
+                        <td>
+                            <span style="
+                                background-color: #c8e6c9;
+                                color: #256029;
+                                padding: 3px 8px;
+                                border-radius: 4px;
+                                font-size: 12px;
+                                font-weight: bold;
+                            ">
+                                Aktif
+                            </span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>SMA</td>
+                        <td>SMAN 3 JAKARTA</td>
+                        <td>2022 - 2025</td>
+                        <td>Lulus</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+</body>
+</html>
+```
