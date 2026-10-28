@@ -1,224 +1,148 @@
-
-<DOCTYPE html>
+```html
+<!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Portofolio Pribadi - Beranda</title>
+    <title>Portofolio Pribadi - Faisal</title>
 
+    <!-- Bootstrap 5 -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <!-- CSS Sendiri -->
     <link rel="stylesheet" href="style.css">
-
-    <style>
-        .hero-banner {
-            background-color: #2e7d32;
-            color: white;
-            padding: 40px 30px;
-            border-radius: 10px;
-            margin-bottom: 30px;
-        }
-
-        .hero-banner h1 {
-            font-size: 32px;
-            margin-bottom: 10px;
-        }
-
-        .hero-banner p {
-            font-size: 17px;
-            line-height: 1.6;
-        }
-
-        .quick-stats {
-            display: flex;
-            gap: 20px;
-            margin-top: 20px;
-        }
-
-        .stat-box {
-            background-color: #388e3c;
-            padding: 15px 20px;
-            border-radius: 6px;
-            flex: 1;
-        }
-
-        .stat-box h3 {
-            font-size: 24px;
-            color: white;
-            margin-bottom: 5px;
-        }
-
-        .stat-box p {
-            font-size: 14px;
-        }
-
-        .focus-title {
-            margin-bottom: 10px;
-            color: #2e7d32;
-        }
-
-        .focus-list {
-            margin-left: 20px;
-            line-height: 1.8;
-        }
-
-        .about-button {
-            display: inline-block;
-            background-color: #2e7d32;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .about-button:hover {
-            background-color: #1b5e20;
-        }
-
-        @media (max-width: 768px) {
-            .quick-stats {
-                flex-direction: column;
-            }
-        }
-    </style>
 </head>
 
 <body>
 
-    <!-- Sidebar -->
-    <header class="sidebar">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                FAISAL
+            </a>
 
-        <h1>
-            <a href="index.html">FAISAL</a>
-        </h1>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menuNavigasi"
+                aria-controls="menuNavigasi"
+                aria-expanded="false"
+                aria-label="Buka navigasi"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <nav class="nav-menu">
-            <ul>
+            <div class="collapse navbar-collapse" id="menuNavigasi">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">
+                            Beranda
+                        </a>
+                    </li>
 
-                <li>
-                    <a href="index.html" class="active">
-                        Beranda
-                    </a>
-                </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">
+                            Tentang Saya
+                        </a>
+                    </li>
 
-                <li>
-                    <a href="about.html">
-                        Tentang Saya
-                    </a>
-                </li>
-
-                <li>
-                    <a href="kontak.html">
-                        Kontak
-                    </a>
-                </li>
-
-            </ul>
-        </nav>
-
-       
-
-    </header>
-
+                    <li class="nav-item">
+                        <a class="nav-link" href="kontak.html">
+                            Kontak
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     <!-- Konten Utama -->
-    <main class="main-content">
+    <main class="container py-5">
 
-        <!-- Bagian Selamat Datang -->
-        <section class="hero-banner">
-
-            <h1>
+        <!-- Bagian Perkenalan -->
+        <section class="p-4 p-md-5 mb-4 bg-success text-white rounded-3">
+            <h1 class="fw-bold">
                 Selamat Datang di Portofolio Saya!
             </h1>
 
-            <p>
-                Saya seorang pengembang IoT pemula yang berfokus
-                pada teknologi Internet of Things (IoT), Pemrograman,
-                dan Pengembangan Sistem Berbasis Perangkat Terhubung.
-
+            <p class="lead mt-3">
+                Saya seorang mahasiswa Teknik Informatika yang tertarik
+                pada Internet of Things (IoT), pemrograman, dan
+                pengembangan sistem berbasis perangkat terhubung.
             </p>
 
-            <div class="quick-stats">
-
-                <div class="stat-box">
-                    <h3>3+</h3>
-                    <p>Proyek Selesai</p>
-                </div>
-
-                <div class="stat-box">
-                    <h3>Informatics</h3>
-                    <p>Program Studi</p>
-                </div>
-
-            </div>
-
+            <a href="about.html" class="btn btn-light mt-3">
+                Tentang Saya
+            </a>
         </section>
 
-
         <!-- Ringkasan -->
-        <section class="card">
+        <section class="card shadow-sm border-0">
+            <div class="card-body p-4">
 
-            <div class="page-header">
-                <h2>Ringkasan Singkat</h2>
-            </div>
+                <h2 class="text-success mb-3">
+                    Ringkasan Singkat
+                </h2>
 
-            <p style="
-                margin-bottom: 15px;
-                color: #555555;
-                line-height: 1.6;
-            ">
-                Website ini dibuat menggunakan murni
-                <strong>HTML5</strong> dan <strong>CSS3</strong>
-                tanpa menggunakan framework external apapun
-                seperti Bootstrap atau Tailwind CSS.
-            </p>
+                <p>
+                    Website ini merupakan portofolio pribadi yang
+                    menampilkan profil, riwayat pendidikan, dan informasi
+                    kontak saya. Website dibuat menggunakan HTML,
+                    CSS, dan framework Bootstrap 5.
+                </p>
 
+                <h4 class="mt-4">Fokus Keahlian</h4>
 
-            <h4 class="focus-title">
-                Fokus Keahlian Utama:
-            </h4>
+                <div class="row g-3 mt-1">
 
-            <ul class="focus-list">
+                    <div class="col-md-6">
+                        <div class="p-3 border rounded">
+                            Pemrograman C++
+                        </div>
+                    </div>
 
-                <li>
-                    Pemrograman Terstruktur (C++)
-                    & Pemrograman Web (HTML/CSS/JS)
-                </li>
+                    <div class="col-md-6">
+                        <div class="p-3 border rounded">
+                            Pemrograman Web
+                        </div>
+                    </div>
 
-                <li>
-                    Perancangan Basis Data
-                    (MySQL, ERD, Normalisasi)
-                </li>
+                    <div class="col-md-6">
+                        <div class="p-3 border rounded">
+                            Perancangan Basis Data
+                        </div>
+                    </div>
 
-                <li>
-                    Arsitektur & Jaringan Komputer.
-                </li>
-                <li>
-                    Pengembang IoT
-                </li>
+                    <div class="col-md-6">
+                        <div class="p-3 border rounded">
+                            Internet of Things (IoT)
+                        </div>
+                    </div>
 
-            </ul>
-
-
-            <div style="margin-top: 25px;">
-
-                <a
-                    href="about.html"
-                    class="about-button"
-                >
-                    Baca Lebih Lanjut Tentang Saya →
-                </a>
-
-                 <div class="sidebar-footer">
-            <p>&copy; 2026 Portofolio HTML/CSS</p>
-        </div>
+                </div>
 
             </div>
-
         </section>
 
     </main>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center py-3 border-top">
+        <p class="mb-0">
+            &copy; 2026 Portofolio Faisal
+        </p>
+    </footer>
+
+    <!-- Bootstrap JavaScript -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+    </script>
 
 </body>
 </html>
